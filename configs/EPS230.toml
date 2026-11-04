@@ -1,0 +1,23 @@
+# Configuration de compilation des notes de cours.
+#
+# Chaque nom correspond à un dossier dans `chapters/` (qui contient `main.typ`).
+# L'ordre de la liste est l'ordre dans le document; retirer un nom l'exclut.
+#
+# Pour une version personnelle : copier ce fichier en
+#   configs/<nom>.toml         (versionné, partagé avec les collègues)
+#   configs/<nom>.local.toml   (ignoré par Git, privé)
+# puis compiler avec :
+#   typst compile main.typ --input config=configs/<nom>.toml
+
+title = "Note de cours EPS2030"
+chapter-on-same-page = true
+watermark = ""
+
+chapters = [
+  "preliminary-informations",
+  "introduction",
+]
+
+annexes = [
+  "interesting-web-pages",
+]
