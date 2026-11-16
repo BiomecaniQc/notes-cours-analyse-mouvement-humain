@@ -1,5 +1,6 @@
 #import "../../common/lib.typ": *
 
+
 = Introduction
 <sec:introduction>
 
@@ -43,7 +44,107 @@ A partir de cette analyse, il sera possible de sélectionner des exercices perti
 Ce cours de biomécanique a pour objet d'apporter les éléments théoriques nécessaires à mener une analyse des mouvements humains.
 
 #figure(
-  scaled-include(path("media/choix-activites.typ"), width: 60%),
-  caption: [Démarches pour le choix d’exercices (version vectorielle)],
+  scaled-include(path("media/choix-activites.typ"), width: 55%),
+  caption: [Démarches pour le choix d'exercices],
 )
 
+
+== Corriger le mouvement
+<corriger-le-mouvement>
+Dans le cadre de ce cours#if config.at("lecture-title", default: "") != "" [ de "#config.lecture-title"], la science de support est la biomécanique et plus précisément la science du mouvement humain.
+L'outil premier et quasi-exclusif de l'enseignant est son œil.
+Or si tout le monde peut *voir* le même mouvement, son *observation* et son *analyse* en seront plus ou moins pertinentes selon ses connaissances et son expertise en biomécanique.
+L'enseignant doit être capable de comprendre les causes du mouvement pour déterminer les phases clé et ainsi se focaliser sur les points importants.
+C'est en connaissant la dynamique du mouvement humain que l'on peut rapidement remonter aux causes des problèmes techniques.
+Par la suite les compétences en psychomotricité et pédagogie interviendront pour solutionner le problème.
+
+
+== Observer pour s'interroger
+<observer-pour-sinterroger>
+Les exploits sportifs comme ceux réalisés lors des Jeux Olympiques (voir photos présentées dans le cours) rendent plus aisée l'observation des principes mécaniques car les athlètes proposent des performances à la limite des capacités humaines.
+Ces mêmes principes sont valables pour les performances des élèves dans le cadre des cours d'éducation physique.
+Ces images sont là pour s'interroger sur la faisabilité, la complexité du mouvement et aussi pour voir si, avant de commencer, nous avons des réponses (partielles ou totales, justes ou erronées).
+Il serait amusant de répondre à ces questions au début de ce cours et revenir après les 45 heures pour voir si vos réponses ont changé!
+Bien entendu, il ne sera pas possible d'aborder tous ces exemples dans les quelques heures imparties.
+Mais à partir de la compréhension des phénomènes en général, il vous sera possible d'apporter des réponses pertinentes.
+
+#[
+  #show heading.where(level: 3): it => {
+    it.body
+    linebreak()
+  }
+
+  === Équilibre
+  <équilibre>
+  Un *gymnaste* qui réalise une croix de fer aux anneaux applique une adduction isométrique.
+  Peut-on qualifier ce gymnaste de fort ou puissant?
+  Qu'est-ce que la force et la puissance?
+  Quel effort doit-il développer au niveau des épaules pour maintenir la posture?
+  En faisant l'hypothèse que la jambe que l'on voit verticale sur l'image est bien celle de la gymnaste, quelles sont les conditions pour qu'elle puisse tenir en équilibre sur son autre jambe?
+  Pourquoi cet exercice en *gymnastique rythmique* et sportive est difficile?
+  Le *kayakiste* est aussi en équilibre pour éviter de tomber à l'eau alors que son bateau est très étroit.
+  Comment peut-on qualifier cet équilibre?
+  Quelles sont les conditions pour que le bateau flotte?
+
+  === Citius Altus Fortius
+  <citius-altus-fortius>
+  La devise des Jeux Olympiques "plus loin, plus haut, plus fort" rappelle certains paramètres de la performance notamment dans certaines disciplines sportives comme l'athlétisme.
+  En analysant l'évolution des performances en *saut en hauteur*, on remarque qu'elle est liée à l'évolution des techniques (#eg ciseaux, rouleau ventral, fosbury flop).
+  En quoi le fosbury flop est une technique plus performante?
+  Quels sont les paramètres qui conditionnent la performance en saut en hauteur?
+
+  La performance en *saut à la perche* est davantage associée à l'évolution des équipements tant de la perche que des tapis de réception.
+  On peut alors s'interroger sur les qualités d'amortissement et d'élasticité des équipements pour permettre ces performances sans danger.
+  En 110 mètres haies où l'objectif est d'aller le plus rapidement possible, le corps lors du franchissement est en position fermée avec une jambe tendue vers l'avant tandis que la seconde passe par le côté.
+  Est-ce un effet de style?
+  Pourquoi les coureurs font parfois tomber les haies et pourquoi les haies tombent-elles?
+  De nombreux sports font appel à des techniques de lancer.
+  Que ce soit en *handball* ou au *javelot*, le bras part d'une position en arrière du tronc.
+  Comment peut-on expliquer cette technique?
+  Dans d'autres activités de lancer en athlétisme (*poids, marteau*), le projectile est lancé après des rotations.
+  Quel est l'avantage de telles techniques?
+  Pourquoi ne sont-elles pas utilisées en javelot?
+
+  *L'haltérophilie* est un sport qui nécessite force et technique.
+  L'épaulé-jeté et l'arraché sont deux gestes techniques utilisés dans les compétitions.
+  Comment l'haltérophile parvient à se glisser sous la barre lors de l'arraché?
+  Pourquoi ses bras sont-ils écartés alors qu'ils sont plus serrés lors de l'épaulé-jeté?
+  Quelles articulations sont sollicitées lors du jeté?
+  Le terme "fort" est tout autant utilisé à tort et à travers dans le langage sportif.
+  Peut-on dire que les boxeurs ou karatékas sont forts?
+  Dans tous les sports d'impacts (#eg, *boxe, taekwondo*) avec des compétitions réglementés, les sportifs portent des protections.
+  Quelles sont les caractéristiques de ces protections?
+  Sont-elles les même quel que soit l'âge ou le niveau de pratique?
+
+  === Impulsion
+  <impulsion>
+  Le terme d'impulsion est largement usité dans le langage courant et réfère le plus souvent aux capacités de détente verticale lors de sauts.
+  Qu'en est-il en biomécanique?
+  Peut-on reconnaître un athlète puissant juste par la hauteur de son saut?
+  Pourquoi est-ce difficile de sauter dans le sable?
+
+  === Rotation
+  <rotation>
+  Les segments humains sont liés les uns aux autres par des articulations charnières ou sphéroïdes.
+  Ainsi tous les mouvements humains qu'ils soient en translation (mouvements linéaires) comme sauter vers le haut, vers l'avant, courir, etc. ou en rotation (mouvements angulaires) comme les saltos, roues, lancer de disque, etc. proviennent de rotations combinées des segments.
+  On peut s'interroger sur la manière dont le *plongeur* crée de la rotation depuis la tour de 10 mètres ou pourquoi le *sauteur en longueur* va pédaler et tourner ses bras vers l'avant.
+  Est-ce pour aller plus loin?
+
+  Dans les disciplines acrobatiques telles que la *gymnastique* artistique, le *trampoline*, le *tumbling* ou encore le *plongeon*, la posture du corps lors des saltos (groupé, carpé, tendu) ont des valeurs différentes.
+  Pourquoi une personne en boule tourne-t-elle plus rapidement?
+  Une autre acrobatie que l'on voit souvent est le salto vrillé, l'athlète réalise dans la même acrobatie une rotation transversale combinée à une rotation longitudinales.
+  Pourquoi les gymnastes, trampolinistes et plongeur n'adoptent pas les mêmes techniques et se retrouvent avec les bras placés différemment?
+
+  === Hydrodynamique - aérodynamique
+  <hydrodynamique---aérodynamique>
+  Il n'est pas rare de qualifier une voiture ou un casque de vélo d'aérodynamique sans véritablement en connaître le sens.
+  Est-ce qu'une voiture aérodynamique signifie une voiture rapide ou une voiture avec une forme sympathique qui ressemble à une voiture de course?
+  En cyclisme quel phénomène fait que les cyclistes dans le peloton travaillent moins que celui qui fait une échappée?
+  Que veut dire "prendre l'aspiration"?
+  Sur le versant hydrodynamique, comme il est moins courant de s'esclaffer sur l'hydrodynamisme de la pale de son canoë, on peut de demander comment François Durand a été champion du Monde en *canoë* biplace de descente ou de façon plus simple pourquoi flotte-t-on ou avance-t-on dans l'eau en *natation*.
+
+  === Les limites
+  <les-limites>
+  Il va de soi que la biomécanique ne répondra pas à toutes les questions de l'entrainement et de l'éducation physique.
+  Toutefois cette science combinée à d'autres et associée à la pédagogie devrait aboutir à une réflexion synthétique apte à proposer des situations d'apprentissage efficaces et des corrections adéquates tout en respectant les capacités des apprenants.
+]

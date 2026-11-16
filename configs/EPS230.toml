@@ -9,9 +9,10 @@
 # puis compiler avec :
 #   typst compile main.typ --input config=configs/<nom>.toml
 
-title = "Note de cours EPS2030"
+title = "Note de cours EPS230"
+lecture-title = "Biomécanique de l'activité physique"
 chapter-on-same-page = true
-watermark = ""
+watermark = "Document de travail"
 
 chapters = [
   "preliminary-informations",

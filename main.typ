@@ -1,7 +1,6 @@
 #import "common/lib.typ": *
 
-// Configuration choisie avec `--input config=configs/<nom>.toml` (voir configs/default.toml)
-#let config = toml(sys.inputs.at("config", default: "configs/default.toml"))
+// `config` provient de common/config.typ (voir configs/default.toml)
 
 #show: biomecaniqc-book.with(
   title: config.title,
@@ -16,12 +15,10 @@
   chapter-on-same-page: config.chapter-on-same-page,
 )
 
-#todo[Change '’' for ''']
-
 #outlines()
 
 #for chapter in config.at("chapters", default: ()) {
-  include "chapters/" + chapter + "/main.typ"
+  include path("chapters/" + chapter + "/main.typ")
 }
 
 
@@ -29,7 +26,7 @@
 #if annex-list.len() > 0 [
   #show: annexes
   #for chapter in annex-list {
-    include "chapters/" + chapter + "/main.typ"
+    include path("chapters/" + chapter + "/main.typ")
   }
 ]
 

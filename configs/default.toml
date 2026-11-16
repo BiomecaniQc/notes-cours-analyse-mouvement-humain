@@ -10,8 +10,9 @@
 #   typst compile main.typ --input config=configs/<nom>.toml
 
 title = "Note de cours"
+lecture-title = ""
 chapter-on-same-page = true
-watermark = ""
+watermark = "Document de travail"
 
 chapters = [
   "preliminary-informations",

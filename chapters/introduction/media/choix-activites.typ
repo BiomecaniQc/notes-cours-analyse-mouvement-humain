@@ -35,7 +35,7 @@
     )))
   }
 
-  node((0, 3), (3.2, 5.8), green, "banque")[banque \ d’exercices]
+  node((0, 3), (3.2, 5.8), green, "banque")[banque \ d'exercices]
   node((4.6, 3), (7.8, 5.8), red, "analyse")[analyse du \ mouvement]
   node((2.4, -0.1), (5.4, 1.1), gold, "selection")[sélection]
 
