@@ -1,0 +1,35 @@
+# Configuration de compilation des notes de cours.
+#
+# Chaque nom correspond à un dossier dans `chapters/` (qui contient `main.typ`).
+# L'ordre de la liste est l'ordre dans le document; retirer un nom l'exclut.
+#
+# Pour une version personnelle : copier ce fichier en
+#   configs/<nom>.toml         (versionné, partagé avec les collègues)
+#   configs/<nom>.local.toml   (ignoré par Git, privé)
+# puis compiler avec :
+#   typst compile main.typ --input config=configs/<nom>.toml
+
+title = "Note de cours"
+lecture-code = "KIN2101"
+lecture-title = "Biomécanique et enseignement"
+chapter-on-same-page = true
+watermark = "Document de travail"
+
+chapters-to-include = [
+  "preliminary-informations",
+  "introduction",
+  "la-biomecanique",
+]
+
+annexes-to-include = [
+  "interesting-web-pages",
+]
+
+[preliminary-informations]
+schedule-paragraph = '''
+Les informations relatives aux horaires et salles de cours sont disponible sur le site de l'Université à l'adresse: https://www.progcours.umontreal.ca/guichets/progcours/cours/index_fiche_cours/KIN2101.html.
+Les notes de cours sont disponibles sur _Studium_.
+Les notes de cours sont en cours de construction, avec de la couleur; c'est pourquoi, en plus d'une dimension écologique, je vous déconseille de les imprimer.
+Je vous propose alors d'utiliser un logiciel pour annoter vos PDFs tel PDF-XChange-Viewer (https://pdf-xchange-viewer.softonic.fr).
+Pensez à regarder régulièrement sur _Studium_ pour récupérer les nouvelles versions et documents qui s'ajoutent au cours de la session.
+'''

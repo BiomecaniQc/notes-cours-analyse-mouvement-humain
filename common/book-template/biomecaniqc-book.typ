@@ -1,4 +1,5 @@
 #import "@preview/citesugar:0.1.0": citesugar
+#import "@preview/fancy-units:0.1.1": fancy-units-configure, num, qty, unit
 #import "formatters.typ": authors-header, long-date-display
 
 #let _title = title
@@ -174,6 +175,16 @@
 
     show cite: citesugar
 
+    show link: it => {
+      if type(it.dest) == str {
+        // External URL only
+        text(fill: rgb("#000070"), underline(it))
+      } else {
+        // Labels, locations, etc. are left as they are
+        it
+      }
+    }
+
     if (lang == "fr") {
       let narrow-space = sym.space.nobreak.narrow
       show regex("\\s*\\:"): [#narrow-space:]
@@ -185,6 +196,13 @@
       body
     }
   }
+
+  fancy-units-configure(
+    per-mode: "slash",
+    decimal-separator: [.],
+    unit-separator: [.],
+    quantity-separator: [~],
+  )
 
   body-content
 }
@@ -221,3 +239,58 @@
   }),
 ))
 
+#let tague-questions(body) = align(
+  left,
+  box(
+    width: 50%,
+    stroke: 0pt,
+    fill: _gray,
+    inset: 8pt,
+    align(
+      left,
+      [
+        *Exemple de questions dans:*
+        #body
+      ],
+    ),
+  ),
+)
+
+#let interesting-note(body) = align(
+  center,
+  box(
+    width: 80%,
+    stroke: 1.5pt,
+    fill: _gray,
+    inset: 8pt,
+    align(
+      left,
+      body,
+    ),
+  ),
+)
+
+#let complementary-questions(body) = align(
+  left,
+  box(
+    width: 80%,
+    stroke: 0pt,
+    fill: rgb("#fff4c9"),
+    inset: 8pt,
+    align(
+      left,
+      [
+        *Questions complémentaires:*
+
+        #body
+      ],
+    ),
+  ),
+)
+
+#let two-columns-table(..body) = align(center, table(
+  columns: 2,
+  align: (right, left),
+  stroke: none,
+  ..body,
+))

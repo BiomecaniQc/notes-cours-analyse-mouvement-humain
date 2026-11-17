@@ -17,7 +17,7 @@ L'éducation physique a pour objectif le développement de compétences multiple
 Le cœur de la matière est le mouvement humain.
 Si la mécanique se définit comme la science du mouvement, la biomécanique est spécifique au mouvement "du vivant".
 
-L'enseignant d'éducation physique prépare des situations d'apprentissage en rapport avec sa connaissance de l'activité et celle du mouvement humain en général, de la clientèle (#ie les élèves), des équipements dont il dispose, etc.
+L'enseignant d'éducation physique prépare des situations d'apprentissage en rapport avec sa connaissance de l'activité et celle du mouvement humain en général, de la clientèle (#ie, les élèves), des équipements dont il dispose, etc.
 S'il existe une littérature abondante sur l'organisation de séances avec une multitude d'exercices, aucun livre ne correspondra parfaitement au cas spécifique à chaque groupe d'élèves et encore moins à chaque élève.
 La formation universitaire propose alors des contenus de sciences appliquées pour que l'enseignant puisse avoir un regard critique sur l'existant et adapter celui-ci efficacement à sa situation.
 La préparation de situations n'est qu'une partie de la fonction de l'enseignant.
@@ -44,7 +44,7 @@ A partir de cette analyse, il sera possible de sélectionner des exercices perti
 Ce cours de biomécanique a pour objet d'apporter les éléments théoriques nécessaires à mener une analyse des mouvements humains.
 
 #figure(
-  scaled-include(path("media/choix-activites.typ"), width: 55%),
+  scaled-include(path("media/choix-activites.typ"), width: 45%),
   caption: [Démarches pour le choix d'exercices],
 )
 
@@ -69,82 +69,77 @@ Bien entendu, il ne sera pas possible d'aborder tous ces exemples dans les quelq
 Mais à partir de la compréhension des phénomènes en général, il vous sera possible d'apporter des réponses pertinentes.
 
 #[
-  #show heading.where(level: 3): it => {
-    it.body
-    linebreak()
-  }
+  #let theme(body) = [
+    *#body* ---
+  ]
 
-  === Équilibre
-  <équilibre>
-  Un *gymnaste* qui réalise une croix de fer aux anneaux applique une adduction isométrique.
+  #let sport-name(body) = [*_#(body)_*]
+
+  #theme[Équilibre]
+  Un #sport-name[gymnaste] qui réalise une croix de fer aux anneaux applique une adduction isométrique.
   Peut-on qualifier ce gymnaste de fort ou puissant?
   Qu'est-ce que la force et la puissance?
   Quel effort doit-il développer au niveau des épaules pour maintenir la posture?
   En faisant l'hypothèse que la jambe que l'on voit verticale sur l'image est bien celle de la gymnaste, quelles sont les conditions pour qu'elle puisse tenir en équilibre sur son autre jambe?
-  Pourquoi cet exercice en *gymnastique rythmique* et sportive est difficile?
-  Le *kayakiste* est aussi en équilibre pour éviter de tomber à l'eau alors que son bateau est très étroit.
+  Pourquoi cet exercice en #sport-name[gymnastique rythmique] et sportive est difficile?
+  Le #sport-name[kayakiste] est aussi en équilibre pour éviter de tomber à l'eau alors que son bateau est très étroit.
   Comment peut-on qualifier cet équilibre?
   Quelles sont les conditions pour que le bateau flotte?
 
-  === Citius Altus Fortius
-  <citius-altus-fortius>
+  #theme[Citius Altus Fortius]
   La devise des Jeux Olympiques "plus loin, plus haut, plus fort" rappelle certains paramètres de la performance notamment dans certaines disciplines sportives comme l'athlétisme.
-  En analysant l'évolution des performances en *saut en hauteur*, on remarque qu'elle est liée à l'évolution des techniques (#eg ciseaux, rouleau ventral, fosbury flop).
+  En analysant l'évolution des performances en #sport-name[saut en hauteur], on remarque qu'elle est liée à l'évolution des techniques (#eg, ciseaux, rouleau ventral, fosbury flop).
   En quoi le fosbury flop est une technique plus performante?
   Quels sont les paramètres qui conditionnent la performance en saut en hauteur?
 
-  La performance en *saut à la perche* est davantage associée à l'évolution des équipements tant de la perche que des tapis de réception.
+  La performance en #sport-name[saut à la perche] est davantage associée à l'évolution des équipements tant de la perche que des tapis de réception.
   On peut alors s'interroger sur les qualités d'amortissement et d'élasticité des équipements pour permettre ces performances sans danger.
   En 110 mètres haies où l'objectif est d'aller le plus rapidement possible, le corps lors du franchissement est en position fermée avec une jambe tendue vers l'avant tandis que la seconde passe par le côté.
   Est-ce un effet de style?
   Pourquoi les coureurs font parfois tomber les haies et pourquoi les haies tombent-elles?
   De nombreux sports font appel à des techniques de lancer.
-  Que ce soit en *handball* ou au *javelot*, le bras part d'une position en arrière du tronc.
+  Que ce soit en #sport-name[handball] ou au #sport-name[javelot], le bras part d'une position en arrière du tronc.
   Comment peut-on expliquer cette technique?
-  Dans d'autres activités de lancer en athlétisme (*poids, marteau*), le projectile est lancé après des rotations.
+  Dans d'autres activités de lancer en athlétisme (#sport-name[poids], #sport-name[marteau]), le projectile est lancé après des rotations.
   Quel est l'avantage de telles techniques?
   Pourquoi ne sont-elles pas utilisées en javelot?
 
-  *L'haltérophilie* est un sport qui nécessite force et technique.
+  #sport-name[L'haltérophilie] est un sport qui nécessite force et technique.
   L'épaulé-jeté et l'arraché sont deux gestes techniques utilisés dans les compétitions.
   Comment l'haltérophile parvient à se glisser sous la barre lors de l'arraché?
   Pourquoi ses bras sont-ils écartés alors qu'ils sont plus serrés lors de l'épaulé-jeté?
   Quelles articulations sont sollicitées lors du jeté?
   Le terme "fort" est tout autant utilisé à tort et à travers dans le langage sportif.
   Peut-on dire que les boxeurs ou karatékas sont forts?
-  Dans tous les sports d'impacts (#eg, *boxe, taekwondo*) avec des compétitions réglementés, les sportifs portent des protections.
+  Dans tous les sports d'impacts (#eg, #sport-name[boxe], #sport-name[taekwondo]) avec des compétitions réglementés, les sportifs portent des protections.
   Quelles sont les caractéristiques de ces protections?
   Sont-elles les même quel que soit l'âge ou le niveau de pratique?
 
-  === Impulsion
-  <impulsion>
+  #theme[Impulsion]
   Le terme d'impulsion est largement usité dans le langage courant et réfère le plus souvent aux capacités de détente verticale lors de sauts.
   Qu'en est-il en biomécanique?
   Peut-on reconnaître un athlète puissant juste par la hauteur de son saut?
   Pourquoi est-ce difficile de sauter dans le sable?
 
-  === Rotation
-  <rotation>
+  #theme[Rotation]
   Les segments humains sont liés les uns aux autres par des articulations charnières ou sphéroïdes.
   Ainsi tous les mouvements humains qu'ils soient en translation (mouvements linéaires) comme sauter vers le haut, vers l'avant, courir, etc. ou en rotation (mouvements angulaires) comme les saltos, roues, lancer de disque, etc. proviennent de rotations combinées des segments.
-  On peut s'interroger sur la manière dont le *plongeur* crée de la rotation depuis la tour de 10 mètres ou pourquoi le *sauteur en longueur* va pédaler et tourner ses bras vers l'avant.
+  On peut s'interroger sur la manière dont le #sport-name[plongeur] crée de la rotation depuis la tour de 10 mètres ou pourquoi le #sport-name[sauteur en longueur] va pédaler et tourner ses bras vers l'avant.
   Est-ce pour aller plus loin?
 
-  Dans les disciplines acrobatiques telles que la *gymnastique* artistique, le *trampoline*, le *tumbling* ou encore le *plongeon*, la posture du corps lors des saltos (groupé, carpé, tendu) ont des valeurs différentes.
+  Dans les disciplines acrobatiques telles que la #sport-name[gymnastique] artistique, le #sport-name[trampoline], le #sport-name[tumbling] ou encore le #sport-name[plongeon], la posture du corps lors des saltos (groupé, carpé, tendu) ont des valeurs différentes.
   Pourquoi une personne en boule tourne-t-elle plus rapidement?
   Une autre acrobatie que l'on voit souvent est le salto vrillé, l'athlète réalise dans la même acrobatie une rotation transversale combinée à une rotation longitudinales.
   Pourquoi les gymnastes, trampolinistes et plongeur n'adoptent pas les mêmes techniques et se retrouvent avec les bras placés différemment?
 
-  === Hydrodynamique - aérodynamique
-  <hydrodynamique---aérodynamique>
+  #theme[Hydrodynamique - aérodynamique]
   Il n'est pas rare de qualifier une voiture ou un casque de vélo d'aérodynamique sans véritablement en connaître le sens.
   Est-ce qu'une voiture aérodynamique signifie une voiture rapide ou une voiture avec une forme sympathique qui ressemble à une voiture de course?
   En cyclisme quel phénomène fait que les cyclistes dans le peloton travaillent moins que celui qui fait une échappée?
   Que veut dire "prendre l'aspiration"?
-  Sur le versant hydrodynamique, comme il est moins courant de s'esclaffer sur l'hydrodynamisme de la pale de son canoë, on peut de demander comment François Durand a été champion du Monde en *canoë* biplace de descente ou de façon plus simple pourquoi flotte-t-on ou avance-t-on dans l'eau en *natation*.
+  Sur le versant hydrodynamique, comme il est moins courant de s'esclaffer sur l'hydrodynamisme de la pale de son canoë, on peut de demander comment François Durand a été champion du Monde en #sport-name[canoë] biplace de descente ou de façon plus simple pourquoi flotte-t-on ou avance-t-on dans l'eau en #sport-name[natation].
 
-  === Les limites
-  <les-limites>
+  #theme[Les limites]
   Il va de soi que la biomécanique ne répondra pas à toutes les questions de l'entrainement et de l'éducation physique.
   Toutefois cette science combinée à d'autres et associée à la pédagogie devrait aboutir à une réflexion synthétique apte à proposer des situations d'apprentissage efficaces et des corrections adéquates tout en respectant les capacités des apprenants.
 ]

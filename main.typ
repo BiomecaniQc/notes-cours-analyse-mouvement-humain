@@ -17,12 +17,12 @@
 
 #outlines()
 
-#for chapter in config.at("chapters", default: ()) {
+#for chapter in config.at("chapters-to-include", default: ()) {
   include path("chapters/" + chapter + "/main.typ")
 }
 
 
-#let annex-list = config.at("annexes", default: ())
+#let annex-list = config.at("annexes-to-include", default: ())
 #if annex-list.len() > 0 [
   #show: annexes
   #for chapter in annex-list {
